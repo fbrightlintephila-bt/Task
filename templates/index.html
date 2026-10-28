@@ -1,0 +1,7 @@
+{% extends 'base.html' %}{% block title %}StudentEval AI | Assignment feedback{% endblock %}
+{% block content %}
+<section class="welcome-layout">
+  <div class="welcome-copy"><p class="eyebrow">A clearer way to improve</p><h1>Better feedback.<br><em>Better next attempt.</em></h1><p class="lead">Submit your work, review structured feedback, and keep every attempt in one place. Teachers stay in control of grading criteria and resubmission schedules.</p><div class="action-row"><a class="button button-primary" href="{{ url_for('auth.register') }}">Create student account</a><a class="text-link" href="{{ url_for('auth.login') }}">Sign in <span aria-hidden="true">→</span></a></div></div>
+  <div class="welcome-aside"><div class="aside-rule"></div><p class="eyebrow">Built around the work</p><h2>One honest record<br>from upload to review.</h2><ul class="feature-list"><li><span>01</span> Rubric-based evaluation</li><li><span>02</span> Private attempt history</li><li><span>03</span> Teacher-confirmed deadlines</li></ul></div>
+</section>
+{% endblock %}
